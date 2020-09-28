@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	padding: 50px 20%;
+}
+.menu form button{
+	padding: 15px;
+	border: none;
+	outline: none;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+	cursor: pointer;
+	margin-top: 20px;
+	opacity: 0.9;
+}
+.menu label{
+	font-size: 18px;
+	display: block;
+	float: left;
+	margin-right: 40px;
+	color: #AAAAAA;
+}
+input[type="range"] {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #e8ebef;
+	width: 100%;
+	height: 10px;
+	margin-top: 20px;
+}
+.menu select{
+	padding: 15px 20px 5px 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	color: #AAAAAA;
+	background-color: #DDDDDD;
+}
+.menu option{
+	background-color: white;
+	margin: 12px;
+	font-size: 15px;
+	color: #AAAAAA;
+}
+#btn_find{
+	background-color: #33CC66;
+}
+#btn_clear{
+	background-color: #BBBBBB;
+}
+#btn_clear_path{
+	background-color: #3366CC;
+}
+.menu form button:hover{
+	opacity: 1;
+}
+.matrix{
+	border: 0.1px solid #99CCFF;
+	width:30px;
+	position: relative;
+	background-color: #f1f1f1;
+	height: 30px;
+	display: inline-block;
+	outline: none;
+	clear: both;
+	cursor: pointer;
+}
+.append{
+	display: block;
+	line-height: 0;;
+}
+.matrix:hover{
+	background-color: #DDDDDD;
+}
+.wall{
+	background-color: #182739;
+	border: 1px solid #182739;
+}
+.wall1{
+	background-color: green;
+}
+.point_find{
+	background: green;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	height: 23px;
+	width: 23px;
+	cursor: pointer;
+	border: none;
+}

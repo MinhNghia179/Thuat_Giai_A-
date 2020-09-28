@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ind.css">
+	<script type="text/javascript" src="Algo.js"></script>
+	<script src=https://code.jquery.com/jquery-1.11.3.min.js></script>
+</head>
+<body>
+	<div class="menu">
+		<form>
+			<label for="choosesearch">Choose search algorithm<br>
+				<select id="choosesearch" name="choosesearch">
+					<option>Select Search Algorithm</option>
+					<option>A*</option>
+				</select>
+			</label>
+			<label for="chooseedit">Choose edit mode<br>
+					<select id="chooseedit" name="chooseedit">
+						<option>Select edit mode</option>
+						<option value="Vall">Wall</option>
+						<option value="Erase">Erase</option>
+					</select>
+			</label>
+			<label for="choosespeed">Choose speed<br>
+				<input type="range" id="rangeinput" min="1" max="20" value="1" onchange="rangevalue.value=value"/>
+				<output id="rangevalue"></output>
+			</label>
+			<button class="tablinks" id="btn_find"><i class="fas fa-search"></i> Find Path</button>
+			<button class="tablinks" id="btn_clear" ><i class="fas fa-trash-alt"></i> Clear</button>
+			<button class="tablinks" id="btn_clear_path"><i class="fas fa-wave-square"></i>Clear path</button>
+		</form>
+	</div>
+	<p id="start"></p>
+</body>
+</html>
