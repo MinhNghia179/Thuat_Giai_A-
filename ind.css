@@ -8,7 +8,7 @@ body {
 	display: block;
 	padding: 50px 20%;
 }
-.menu form button{
+.menu div button{
 	padding: 15px;
 	border: none;
 	outline: none;
@@ -75,6 +75,7 @@ input[type="range"] {
 	clear: both;
 	cursor: pointer;
 }
+.matrix:focus
 .append{
 	display: block;
 	line-height: 0;;
@@ -86,8 +87,13 @@ input[type="range"] {
 	background-color: #182739;
 	border: 1px solid #182739;
 }
-.wall1{
+.Erase{
 	background-color: green;
+	border: 1px solid green;
+}
+.result {
+	background-color: yellow;
+	border: 1px solid yellow;
 }
 .point_find{
 	background: green;
