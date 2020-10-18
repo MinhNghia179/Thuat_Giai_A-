@@ -54,8 +54,8 @@ window.onload = function () {
         window.sessionStorage.clear();
         location.reload();
     });
-    var source = [2, 2];
-    var target = [22, 50];
+    var source = [9,9];
+    var target = [10,50];
     document.getElementById(`${source[0]}-${source[1]}`).className += " Erase";
     document.getElementById(`${target[0]}-${target[1]}`).className += " Erase";
 }
@@ -160,13 +160,14 @@ document.getElementById("btn_find").addEventListener('click', function () {
         };
     };
     var astar = new AStar(23, 59, arrA);
-    var source = [2, 2];
-    var target = [22, 50];
+    var source = [9,9];
+    var target = [10,50];
     var node = astar.solve(source, target);
     if (node != -1) {
         do {
             astar.map[node.row][node.col] = 1;
             document.getElementById(`${node.row}-${node.col}`).className += " result";
+			
             node = node.parent;
         } while (node);
     } else {

@@ -75,7 +75,6 @@ input[type="range"] {
 	clear: both;
 	cursor: pointer;
 }
-.matrix:focus
 .append{
 	display: block;
 	line-height: 0;;
@@ -94,6 +93,7 @@ input[type="range"] {
 .result {
 	background-color: yellow;
 	border: 1px solid yellow;
+	transition: background-color 5s ease-in-out;
 }
 .point_find{
 	background: green;
